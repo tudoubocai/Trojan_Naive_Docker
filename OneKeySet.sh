@@ -20,10 +20,12 @@ fi
 # echo "-----------------------------------------------"
 
 rm -rf ./caddy/Caddyfile
-rm -rf ./xray/config.json
+#rm -rf ./xray/config.json
+rm -rf ./trojan-go/config.json
 
 cp ./caddy/Caddyfile.raw ./caddy/Caddyfile
-cp ./xray/config.json.raw ./xray/config.json
+#cp ./xray/config.json.raw ./xray/config.json
+cp ./trojan-go/config.raw ./trojan/config.json
 
 read -p "Please input your server domain name(eg: abc.com): " domainName
 
@@ -33,7 +35,7 @@ if [ "$domainName" = "" ];then
 else
 	echo "Your domain name is: "$domainName
 	sed -i "s/abc.com/$domainName/g" ./caddy/Caddyfile
-	sed -i "s/abc.com/$domainName/g" ./xray/config.json
+#	sed -i "s/abc.com/$domainName/g" ./xray/config.json
 fi
 
 sys=$(uname)
@@ -46,8 +48,8 @@ else
 fi
 
 trojan_password=${uuid: -12}
-sed -i "s/98bc7998-8e06-4193-84d2-38f2e10ee763/$uuid/g" ./xray/config.json
-sed -i "s/38f2e10ee763/$trojan_password/g" ./xray/config.json
+#sed -i "s/98bc7998-8e06-4193-84d2-38f2e10ee763/$uuid/g" ./xray/config.json
+#sed -i "s/38f2e10ee763/$trojan_password/g" ./xray/config.json
 sed -i "s/passwd/$trojan_password/g" ./caddy/Caddyfile
 
 # make a secret domain for naiveproxy
