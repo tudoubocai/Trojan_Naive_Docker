@@ -100,7 +100,10 @@ chmod +x tcp.sh
 ## 下载源码
 
 ```
-git clone https://github.com/maidoudouo/XRay_Trojan_Naiveproxy_Docker
+# git clone https://github.com/maidoudouo/XRay_Trojan_Naiveproxy_Docker
+```
+```
+git clone https://github.com/tudoubocai/XRay_Trojan_Naiveproxy_Docker.git
 ```
 
 ## Setting
