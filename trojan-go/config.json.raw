@@ -14,7 +14,7 @@
     },
     "websocket": {
         "enabled": true,
-        "path": "/trojan/123456789/",
+        "path": "/trojan/e7171876/",
         "host": "abc.abc.abc"
     }
 }
