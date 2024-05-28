@@ -1,0 +1,20 @@
+{
+    "run_type": "server",
+    "disable_http_check": true,
+    "local_addr": "127.0.0.1",
+    "local_port": 14589,
+    "remote_addr": "8.8.8.8",
+    "remote_port": 80,
+    "fallback_addr": "1.1.1.1",
+    "fallback_port": 443,
+    "password": ["1234567890"],
+    "transport_plugin": {
+        "enabled": true,
+        "type": "plaintext"
+    },
+    "websocket": {
+        "enabled": true,
+        "path": "/trojan/123456789/",
+        "host": "abc.abc.abc"
+    }
+}
