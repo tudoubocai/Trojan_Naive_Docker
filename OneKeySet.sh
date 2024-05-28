@@ -25,7 +25,7 @@ rm -rf ./trojan-go/config.json
 
 cp ./caddy/Caddyfile.raw ./caddy/Caddyfile
 #cp ./xray/config.json.raw ./xray/config.json
-cp ./trojan-go/config.json.raw ./trojan/config.json
+cp ./trojan-go/config.json.raw ./trojan-go/config.json
 
 read -p "Please input your server domain name(eg: abc.com): " domainName
 
