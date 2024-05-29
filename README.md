@@ -103,7 +103,7 @@ chmod +x tcp.sh
 # git clone https://github.com/maidoudouo/XRay_Trojan_Naiveproxy_Docker
 ```
 ```
-git clone https://github.com/tudoubocai/XRay_Trojan_Naiveproxy_Docker.git
+git clone https://github.com/tudoubocai/Trojan_Naive_Docker.git
 ```
 
 ## Setting
